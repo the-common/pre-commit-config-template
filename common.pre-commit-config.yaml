@@ -1,0 +1,16 @@
+# Pre-commit framework Configuration
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+
+# This file is based on The Common Pre-commit Framework Configuration Template
+# https://github.com/Lin-Buo-Ren/common-precommit-config-template
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.4.0
+    hooks:
+      - id: trailing-whitespace
+        args:
+          - --markdown-linebreak-ext=md
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-added-large-files
