@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+
+# Set user's real home directory
+HOME="$(
+    getent \
+        passwd \
+        "${USER}" \
+        | cut \
+            --delimiter=: \
+            --fields=6
+)
+
+exec "${@}"

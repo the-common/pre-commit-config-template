@@ -1,0 +1,46 @@
+name: precommit-config-template
+title: Common Pre-commit Config Templates
+base: core
+version: git
+summary: Pre-commit configuration file for easy adaptation
+description: |
+  This utility installs a common base of Pre-commit's configuration file
+  (.pre-commit-config.yaml) that should be easily adaptable for most
+  projects with little modifications.
+
+grade: stable
+confinement: strict
+architectures:
+  - build-on: amd64
+    run-on: any
+
+parts:
+  main:
+    source: .
+    plugin: dump
+    organize:
+      Installer.bash: bin/installer.bash
+
+  launchers:
+    source: snap/local/launchers
+    plugin: dump
+    organize:
+      '*': bin/
+
+plugs:
+  # For determining the (possibly) localized user directories
+  config-user-dirs:
+    interface: personal-files
+    read:
+      - $HOME/.config/user-dirs.dirs
+
+  # Regular file access
+  home:
+  removable-media:
+
+apps:
+  precommit-config-template:
+    adapter: full
+    command: bin/installer.bash
+    command-chain:
+      - bin/precommit-config-template-launch
