@@ -2,7 +2,7 @@
 # shellcheck disable=SC2034
 
 # Install the templates to their proper locations
-# 林博仁(Buo-ren, Lin) © 2020
+#
 # Copyright 2020 林博仁(Buo-ren, Lin) <Buo.Ren.Lin@gmail.com>
 # SPDX-License-Identifier: CC-BY-SA-4.0
 
