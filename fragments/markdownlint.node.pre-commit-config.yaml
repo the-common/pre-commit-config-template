@@ -1,3 +1,6 @@
+# Copyright 2021 林博仁(Buo-ren, Lin) <Buo.Ren.Lin@gmail.com>
+# SPDX-License-Identifier: CC-BY-SA-4.0
+
 # Check Markdown documents with Markdownlint(Node.js variant)
 # https://github.com/DavidAnson/markdownlint
 - repo: https://github.com/igorshubovych/markdownlint-cli

@@ -1,3 +1,8 @@
+# Desktop entry file for document template
+#
+# Copyright 2021 林博仁(Buo-ren, Lin) <Buo.Ren.Lin@gmail.com>
+# SPDX-License-Identifier: CC-BY-SA-4.0
+
 [Desktop Entry]
 Name=.pre-commit-config.yaml
 Type=Link
