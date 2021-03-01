@@ -3,7 +3,7 @@ Upstream-Name: The Common Pre-commit Framework Configuration Template
 Upstream-Contact: 林博仁(Buo-ren, Lin) <Buo.Ren.Lin@gmail.com>
 Source: https://github.com/Lin-Buo-Ren/common-precommit-config-template
 
-# FIXME: Should be "CC-BY-SA-4.0+", but currently reuse-util can't handle it
+# FIXME: Should be "CC-BY-SA-4.0+", but currently reuse-tool can't handle it
 Files: README* */README*
 Copyright: 2021 林博仁(Buo-ren, Lin) <Buo.Ren.Lin@gmail.com>
 License: CC-BY-SA-4.0
