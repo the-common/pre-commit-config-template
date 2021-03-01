@@ -1,4 +1,5 @@
 # Check Markdown documents with Markdownlint(Node.js variant)
+# https://github.com/DavidAnson/markdownlint
 - repo: https://github.com/igorshubovych/markdownlint-cli
   rev: v0.23.2
   hooks:
