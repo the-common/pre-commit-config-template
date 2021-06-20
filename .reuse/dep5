@@ -4,6 +4,7 @@ Upstream-Contact: 林博仁(Buo-ren, Lin) <Buo.Ren.Lin@gmail.com>
 Source: https://github.com/Lin-Buo-Ren/common-precommit-config-template
 
 # FIXME: Should be "CC-BY-SA-4.0+", but currently reuse-tool can't handle it
+# https://github.com/fsfe/reuse-tool/issues/275
 Files: README* */README*
 Copyright: 2021 林博仁(Buo-ren, Lin) <Buo.Ren.Lin@gmail.com>
 License: CC-BY-SA-4.0
