@@ -124,7 +124,7 @@ init(){
             install \
                 --verbose \
                 --mode=u=rw,go=r \
-                "${RUNTIME_EXECUTABLE_DIRECTORY}/common.pre-commit-config.yaml" \
+                "${RUNTIME_EXECUTABLE_DIRECTORY}/.pre-commit-config.yaml" \
                 "${install_directory_templates}"/.pre-commit-config.yaml
             printf '\n' # Seperate output from different operations
 
@@ -157,7 +157,7 @@ init(){
                 install \
                     --verbose \
                     --mode=u=rw,go=r \
-                    "${RUNTIME_EXECUTABLE_DIRECTORY}/common.pre-commit-config.yaml" \
+                    "${RUNTIME_EXECUTABLE_DIRECTORY}/.pre-commit-config.yaml" \
                     "${HOME}/.local/share/templates"
                 install \
                     --verbose \
@@ -174,7 +174,7 @@ init(){
                     "${install_directory_project}"/.pre-commit-config.yaml{,."$(date +%Y%m%d-%H%M%S-%A)".bak}
                 install \
                     --mode=0644 \
-                    "${RUNTIME_EXECUTABLE_DIRECTORY}"/common.pre-commit-config.yaml \
+                    "${RUNTIME_EXECUTABLE_DIRECTORY}"/.pre-commit-config.yaml \
                     "${install_directory_project}"/.pre-commit-config.yaml
             fi
         ;;
@@ -311,12 +311,12 @@ cleanup_old_installation(){
     rm \
         --verbose \
         --force \
-        "${install_directory_templates}/common.pre-commit-config.yaml"
+        "${install_directory_templates}/.pre-commit-config.yaml"
     rm \
         --verbose \
         --force \
-        "${HOME}/.local/share/templates/common.pre-commit-config.yaml" \
-        "${HOME}/.local/share/templates/common.pre-commit-config.yaml.desktop"
+        "${HOME}/.local/share/templates/.pre-commit-config.yaml" \
+        "${HOME}/.local/share/templates/.pre-commit-config.yaml.desktop"
     printf 'Finished.\n'
 
     printf '\n' # Additional blank line for separating output

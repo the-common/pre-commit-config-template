@@ -14,6 +14,7 @@
 
 # Exclude development assets from source archive
 /.* export-ignore
+/.pre-commit-config.yaml -export-ignore
 /continuous-integration/ export-ignore
 
 # Exclude development assets exclusive licenses
