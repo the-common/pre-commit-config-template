@@ -61,3 +61,16 @@ repos:
     rev: v1.26.1
     hooks:
       - id: yamllint
+
+  # Check EditorConfig compliance
+  # https://github.com/editorconfig-checker/editorconfig-checker.python
+  - repo: https://github.com/editorconfig-checker/editorconfig-checker.python
+    rev: 2.4.0
+    hooks:
+      - id: editorconfig-checker
+        alias: ec
+        exclude: |
+          (?ix)^(
+            LICENSES/.*|
+            .*\.md
+          )$
