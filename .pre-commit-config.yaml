@@ -71,6 +71,5 @@ repos:
         alias: ec
         exclude: |
           (?ix)^(
-            LICENSES/.*|
-            .*\.md
+            LICENSES/.*
           )$
