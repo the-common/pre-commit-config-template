@@ -1,4 +1,4 @@
-# The Common Pre-commit Framework Configuration Template
+# The common pre-commit framework configuration template
 
 This project provides a common base of Pre-commit's configuration file(.pre-commit-config.yaml)
 that should be easily adaptable for most project's with little modifications.
