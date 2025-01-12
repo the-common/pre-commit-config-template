@@ -60,7 +60,7 @@ repos:
   # Check YAML files
   # https://github.com/adrienverge/yamllint
   - repo: https://github.com/adrienverge/yamllint
-    rev: v1.26.1
+    rev: v1.35.1
     hooks:
       - id: yamllint
 
