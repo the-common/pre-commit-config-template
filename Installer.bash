@@ -327,20 +327,20 @@ cleanup_old_installation(){
 ## Shell Builtin Commands » Bourne Shell Builtins » trap
 
 # Trap functions are never invoked directly
-# shellcheck disable=SC2329
+# shellcheck disable=SC2317,SC2329
 trap_errexit(){
     printf 'An error occurred and the script is prematurely aborted\n' 1>&2
     return 0
 }
 
 # Trap functions are never invoked directly
-# shellcheck disable=SC2329
+# shellcheck disable=SC2317,SC2329
 trap_exit(){
     return 0
 }
 
 # Trap functions are never invoked directly
-# shellcheck disable=SC2329
+# shellcheck disable=SC2317,SC2329
 trap_return(){
     local returning_function="${1}"
 
@@ -348,7 +348,7 @@ trap_return(){
 }
 
 # Trap functions are never invoked directly
-# shellcheck disable=SC2329
+# shellcheck disable=SC2317,SC2329
 trap_interrupt(){
     printf '\n' # Separate previous output
     printf 'Recieved SIGINT, script is interrupted.' 1>&2
