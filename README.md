@@ -13,21 +13,10 @@ that should be easily adaptable for most project's with little modifications.
   files for desktop environments.  If you specify a directory as argument it will install the
   template file to the directory instead.
 
-## License
+## Licensing
 
-Unless otherwise specified, this product is released with [the Creative Commons Attribution-ShareAlike License,
-version 4.0](https://creativecommons.org/licenses/by-sa/4.0), or any more recent version of your choice, with an
-exception of the license only covers the configuration file itself, but not other assets in your project.
+Unless otherwise noted([comment headers](https://reuse.software/spec-3.3/#comment-headers)/[REUSE.toml](https://reuse.software/spec-3.3/#reusetoml)), this product is licensed under [the 4.0 International version of the Creative Commons Attribution-ShareAlike License](https://creativecommons.org/licenses/by-sa/4.0), or any of its more recent versions of your preference.
 
 For the attribution requirement, please retain the "This file is based on ..." mention and link to this project.
 
-### Identify licenses applicable to a certain product/development asset
-
-If the asset is in plaintext format:
-
-1. Check the `SPDX-License-Identifier` tag in the file's header
-1. Check the [.reuse/dep5](.reuse/dep5) file from the source tree/release tree directory
-
-If the asset is not in plaintext format:
-
-Check the [.reuse/dep5](.reuse/dep5) file from the source tree/release tree directory
+This work complies to [the REUSE Specification](https://reuse.software/spec/), refer to the [REUSE - Make licensing easy for everyone](https://reuse.software/) website for info regarding the licensing of this product.
