@@ -29,8 +29,14 @@ repos:
       - id: fix-byte-order-marker
       - id: mixed-line-ending
       - id: trailing-whitespace
-        # Trailing whitespaces are unchanged lines in patch files
-        exclude: '^.*\.patch$'
+        exclude: |
+          (?ix)^(
+            # Trailing whitespaces are unchanged lines in patch files
+            .*\.patch
+
+            # Not within the project's scope
+            LICENSES/.*
+          )$
         args:
           - --markdown-linebreak-ext=md
 
