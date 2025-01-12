@@ -2,9 +2,9 @@
 # http://EditorConfig.org
 #
 # This file is based on The Common EditorConfig Template project
-# https://github.com/Lin-Buo-Ren/the-common-editorconfig-template
+# https://github.com/the-common/editorconfig-template
 #
-# Copyright 2021 林博仁(Buo-ren, Lin) <Buo.Ren.Lin@gmail.com>
+# Copyright 2021 林博仁(Buo-ren, Lin) <buo.ren.lin@gmail.com>
 # SPDX-License-Identifier: WTFPL
 
 # This is the top-most EditorConfig file
@@ -18,6 +18,10 @@ indent_size = 4
 charset = utf-8
 insert_final_newline = true
 trim_trailing_whitespace = true
+
+# Git configuration files uses tabs as indentation units
+[/.git{modules,config}]
+indent_style = tab
 
 # Avoid git patch fail to apply due to stripped unmodified lines that contains only spaces
 [/.git/**]
@@ -37,6 +41,10 @@ trim_trailing_whitespace = false
 # Markdownlint to check instead
 indent_size = unset
 
+[*.{diff,patch}]
+# Trailing whitespaces are unchanged lines in patch files
+trim_trailing_whitespace = false
+
 # Vagrant configuration file
 [Vagrantfile]
 indent_size = 2
@@ -48,3 +56,11 @@ indent_size = 2
 # YAML documents
 [*.{yml,yaml}]
 indent_size = 2
+
+[.*.{yml,yaml}]
+indent_size = 2
+
+# Keep the indentation style of the license text verbatim
+[/LICENSES/*]
+indent_size = unset
+indent_style = unset

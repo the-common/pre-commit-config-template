@@ -12,8 +12,8 @@
 # This file is based on The Unofficial yamllint Configuration Templates
 # https://github.com/Lin-Buo-Ren/yamllint-configuration-templates
 #
+# Copyright 2021 林博仁(Buo-ren, Lin) <buo.ren.lin@gmail.com>
 # SPDX-License-Identifier: CC-BY-SA-4.0
-# Copyright © 2020 林博仁(Buo-ren, Lin) <Buo.Ren.Lin@gmail.com>
 rules:
   # Use this rule to control the number of spaces inside braces (`{` and `}`).
   # https://yamllint.readthedocs.io/en/stable/rules.html#module-yamllint.rules.braces
