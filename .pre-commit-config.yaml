@@ -53,7 +53,7 @@ repos:
   # Check REUSE compliance
   # https://reuse.software/
   - repo: https://github.com/fsfe/reuse-tool
-    rev: v0.12.1
+    rev: v5.0.2
     hooks:
       - id: reuse
 
